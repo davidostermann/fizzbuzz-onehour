@@ -1,5 +1,8 @@
 var App = require('./fizzbuzz');
 describe('FizzBuzz game !',() =>{
+	it('use FizzBuzz function with 0', () =>{
+		expect(App.fizzBuzz(0)).toEqual(0);
+	});
 	it('use FizzBuzz function with 1', () =>{
 		expect(App.fizzBuzz(1)).toEqual(1);
 	});
